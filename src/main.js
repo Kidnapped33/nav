@@ -3,7 +3,7 @@ const $lastLi = $siteList.find('li.last')
 const x = localStorage.getItem('x')
 const xObject = JSON.parse(x)//把字符串变成对象parse()
 const hashMap = xObject || [//如果xObject就用xObject，不存在就用默认的数组
-    { logo: 'A', url: 'https://acfun.cn' },
+    { logo: 'A', url: 'https://www.acfun.cn/' },
     { logo: 'B', url: 'https://www.bilibili.com' }
 ]
 
