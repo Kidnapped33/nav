@@ -93,7 +93,7 @@ window.onbeforeunload = () => {
     localStorage.setItem('x', string)
 }
 
-//设置按单个字母直接跳转到网页（已经保存下来的网页的，若多个只会跳转第一个）
+//设置按单个字母直接跳转到网页（已经保存下来的网页的，若多个只会跳转第一个.）
 $(document).on('keypress', (e) => {
     const { key } = e
     for (let i = 0; i < hashMap.length; i++) {
