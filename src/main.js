@@ -46,24 +46,6 @@ const render = () => {
 
 render()
 
-{/* <li>
-<a href="https://www.acfun.cn">
-    <div class="site">
-        <div class="logo">A</div>
-        <div class="link">acfun.cn</div>
-    </div>
-</a>
-</li>
-<li>
-<a href="https://www.bilibili.com/">
-    <div class="site">
-        <div class="logo">B</div>
-        <div class="link">bilibili.com</div>
-    </div>
-</a>
-</li>
- */}
-
 $('.addButton')
     .on('click', () => {
         let url = window.prompt('请输入想添加的网址')
@@ -80,15 +62,6 @@ $('.addButton')
         })
         //删除除了最后一个li的其他li
         render()
-
-        // const $li = $(`<li>
-        //     <a href="${url}">
-        //         <div class="site">
-        //             <div class="logo">${url[8].toUpperCase()}</div>
-        //             <div class="link">${url}</div>
-        //         </div>
-        //     </a>
-        // </li> `).insertBefore($lastLi)
     })
 
 window.onbeforeunload = () => {
