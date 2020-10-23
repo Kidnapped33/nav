@@ -19,8 +19,8 @@ img{
 /* style  */
 body{
     /* background-image: url("./images/image.jpg"); */
-    background: rgb(10, 12, 27);
-font-family: Arial;
+    background: rgb(0, 3, 3);
+    font-family: Arial;
 }
 
 .globalHeader{
@@ -51,24 +51,28 @@ font-family: Arial;
     height: 40px;
     padding: 0px 10px;
     outline: none;
-    border: 1px solid ;
+    border: 1px solid white;
     border-radius: 4px;
 }
 .searchForm > button{
     white-space: nowrap;/*搜索横向显示*/
     padding: 0 28px;
     outline: none; 
-    border: 1px solid rgb(29, 33, 61);
+    border: 1px solid rgb(0, 75, 61);
     border-radius: 4px;
-    background: #1789b9;
+    background:rgba(0, 75, 75,0.8);
     color: white;
     font-size: 16px;
     transition: border-radius 0.5s ;
+    box-shadow: 0 0 5px;
+    text-shadow: 0 0 15px;
 }
 
 .searchForm button:hover{
-    background: #0171a1;
     border-radius: 8px; 
+    box-shadow: 0 0 15px;
+    text-shadow: 0 0 0px;
+    
 }
 
 .globalMain{
@@ -104,16 +108,19 @@ margin-bottom: 10px;
  
 .siteList .site{
     position: relative;
-    border:2px solid #ddd;
     width: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: white;
     margin-bottom: 10px;
     border-radius: 4px;
     padding: 20px 0;
+    color:rgb(191, 246, 246) ;
+    background:rgba(0, 75, 75,0.8); 
+    border:2px solid rgb(55, 159, 159);
+    text-shadow:0 0 10px;
+    box-shadow: 0 0 10px;
     cursor: pointer;
     margin-top: 0px;
     transition: margin-top 0.5s ;
@@ -122,6 +129,9 @@ margin-bottom: 10px;
 
 .siteList .site:hover{
      margin-top: -10px;
+     color:#fff ;
+     background:rgb(0, 75, 75);
+     box-shadow: 0 0 15px;
 }
 
 .siteList .site >.logo{
@@ -149,7 +159,6 @@ margin-bottom: 10px;
 display: block;
 }
 
-
 .siteList .addButton{
     border: 1px solid #ddd;
     background: white;
@@ -159,6 +168,11 @@ display: block;
     align-items: center;
     flex-direction: column;
     padding: 20px 0;
+    border:2px solid rgb(55, 159, 159);
+    text-shadow:0 0 10px;
+    box-shadow: 0 0 5px;
+    color:#fff ;
+    background:rgb(0, 75, 75);
 }
 
 .siteList .addButton .icon{
